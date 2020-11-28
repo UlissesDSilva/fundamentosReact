@@ -1,0 +1,13 @@
+.TableProd table{
+    width: 100%;
+}
+.TableProd th{
+    background-color: #283cae;
+    color: #fff
+}
+.TableProd .Par{
+    background-color: #ddd;
+}
+.TableProd .Par{
+    background-color: #ccc;
+}
