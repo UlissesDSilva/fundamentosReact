@@ -9,7 +9,7 @@ export default props => {
             </li>
         )
     })//Transformando um lista de objetos js em trexos de jsx
-    // por esta sendo usado uma lista é importa o uso de um 'key', assim o react consegue detectar as mudanças que possam acontecer
+    // por esta sendo usado uma lista é importante o uso de uma 'key', assim o react consegue detectar as mudanças que possam acontecer
     return(
         <div>
             <ul style={{listStyle: 'none'}}>

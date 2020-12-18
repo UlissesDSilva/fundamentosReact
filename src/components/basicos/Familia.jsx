@@ -14,6 +14,7 @@ export default props => {
             */}
 
             {/* {React.cloneElement(props.children)} */}
+            {/* passando as props como segundo parametro no cloneElement */}
             {/* {cloneElement(props.children, props)} */}
             {   
                 // o map irá para cada elemento de 'props.children, executar a função'

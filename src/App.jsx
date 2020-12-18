@@ -3,6 +3,7 @@ import './App.css'
 
 import Primeiro from './components/basicos/Primeiro' //Usa referenciando como um componente, como uma tag
 import ComParametro from './components/basicos/ComParametro'
+import ComParametro2 from './components/basicos/ComParametro2'
 import Fregmento from './components/basicos/Fragmento'
 import NumRandom from './components/basicos/NumRandom'
 import Card from './components/layout/Card'
@@ -14,20 +15,31 @@ import ParOuImpar from './components/condicional/ParOuImpar'
 import UsuarioInfo from './components/condicional/UsuarioInfo'
 import DiretaPai from './components/comunicacao/DiretaPai'
 import IndiretaPai from './components/comunicacao/IndiretaPai'
+import Input from './components/formulario/Input'
+import Contador from './components/contador/Contador'
 
 export default () => {
     // O componente App não está usando propriedades vinda de outro componentes, por isso o uso de arrow function
     return (
         <div className="App">
             
-            <h1>Fundamentos React!</h1>
+            <h1>Fundamentos React!!</h1>
             {/* Os componentes adjacentes devem está envolvidos por uma tag */}
             {/* JSX não precisa ter a tag de fechamento */}
         
             <div className="Cards">
+                <Card titulo='12 - Contador' color='#424242'>
+                    <Contador numberStart={10}></Contador>
+                </Card>
+
+                <Card titulo='11 - Componente controlado (Input)' color='#e45f56'>
+                    <Input></Input>
+                </Card>
+
                 <Card titulo='10 - Comunicação Indireta' color='#8bad39'>
                     <IndiretaPai></IndiretaPai>
                 </Card>
+
                 <Card titulo='09 - Comunicação Direta' color='#59323c'>
                     <DiretaPai></DiretaPai>
                 </Card>
@@ -63,7 +75,7 @@ export default () => {
                 </Card>
 
                 <Card titulo='#02 - Componente com Parametro' color='#E8B71A'>
-                    <ComParametro titulo="Segundo Componente" subtitulo="Componente recebendo parametro" />
+                    <ComParametro2 titulo="Segundo Componente!" subtitulo="Componente recebendo parametro" />
                     <ComParametro desc="Situação do aluno" aluno="Ulisses" nota="6.3" />
                     <ComParametro desc="Situação do aluno" aluno="Ana" nota={9.9} />
                 </Card>
@@ -71,6 +83,7 @@ export default () => {
                 <Card titulo='#01 - Primeiro Componente' color='#588C73'>
                     <Primeiro></Primeiro>
                 </Card>
+                
             </div>      
         </div>
     )

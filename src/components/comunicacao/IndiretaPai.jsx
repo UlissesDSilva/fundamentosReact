@@ -14,6 +14,7 @@ export default props =>{
         setUni(uni)
     }
     return(
+        // Em react: Dados são alterados e a interface gráfica reflete essa alteração
         <div>
             <div>
                 <span>{nome} </span>

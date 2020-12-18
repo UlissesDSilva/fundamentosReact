@@ -22,7 +22,7 @@ export default props =>{
             )
         })
     }
-
+    
     return(
         <div className='TableProd'>
             <table>

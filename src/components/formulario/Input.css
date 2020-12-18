@@ -1,0 +1,9 @@
+.Input input{
+    font-size: 1.4em;
+    margin: 3px;
+}
+
+div.input2{
+    display: flex;
+    flex-direction: column;
+}
