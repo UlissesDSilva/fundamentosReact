@@ -19,7 +19,7 @@ class Contador extends Component {
             number: this.state.number + this.state.unidade
         })
     }
-    dec = () =>{ // faz com que o this aponte para o objeto correto
+    dec = () =>{
         this.setState({
             number: this.state.number - this.state.unidade
         })
@@ -30,6 +30,7 @@ class Contador extends Component {
     //         unidade: parseInt(e.target.value) 
     //     })
     // }
+
     changerUnid = (newUnid) =>{
         this.setState({
             unidade: newUnid

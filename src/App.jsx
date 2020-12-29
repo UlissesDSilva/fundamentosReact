@@ -17,6 +17,7 @@ import DiretaPai from './components/comunicacao/DiretaPai'
 import IndiretaPai from './components/comunicacao/IndiretaPai'
 import Input from './components/formulario/Input'
 import Contador from './components/contador/Contador'
+import Mega from './components/mega/Mega'
 
 export default () => {
     // O componente App não está usando propriedades vinda de outro componentes, por isso o uso de arrow function
@@ -28,6 +29,10 @@ export default () => {
             {/* JSX não precisa ter a tag de fechamento */}
         
             <div className="Cards">
+                <Card titulo='13 - Mega' color='#b9006e'>
+                    <Mega qtd={7}></Mega>
+                </Card>
+
                 <Card titulo='12 - Contador' color='#424242'>
                     <Contador numberStart={10}></Contador>
                 </Card>
